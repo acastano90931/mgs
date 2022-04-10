@@ -1,30 +1,17 @@
-# from typing import Any, List, Mapping
-# from BodyZone import BodyZone
-# from DetailBill import DetailBill
-# from Employee import Employee
-# from Routine import Routine
-from Enums import Type
-from User import User
-from SupplierCrud import Proveedor
 
-# Crear clase Gym
 class Campus:
     # Constructor
-    def __init__(self, __campusNit: int, __campusName: str, __campusPhone: str,
+    def __init__(self, __campusNit:int, __campusName: str, __campusPhone: str,
                 __campusAddreess: str, __parking:bool, __sizeParking: int, __technicalService: bool, __user:User):
         # Datos de entrada
-        self.__campusNit = __campusNit
-        self.__campusName = __campusName
-        self.__campusPhone = __campusPhone
-        self.__campusAddreess = __campusAddreess
-        self.__parking = __parking
-        self.__sizeParking = __sizeParking
-        self.__technicalService = __technicalService
-        self.__item = Proveedor(122324, 'Colchoneta', '6068848484', 'holi@example.com')   # Composición Item
-       #self.__listCampus:List = []
-       #self.__employee = Employee(2375, 'Oscar Andres', '317 8613343', 250000, Role.ADMINISTRATOR, Ranking.DOS)    # Composicion de Empleado
-       #self.__listEmployee:List = []
-
+        self._campusNit = __campusNit
+        self._campusName = __campusName
+        self._campusPhone = __campusPhone
+        self._campusAddreess = __campusAddreess
+        self._parking = __parking
+        self._sizeParking = __sizeParking
+        self._technicalService = __technicalService
+        #self._item = Proveedor(122324, 'Colchoneta', '6068848484', 'holi@example.com')   # Composición Item
 
     # Getter and Setter
 
