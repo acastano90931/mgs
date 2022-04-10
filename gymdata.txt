@@ -1,0 +1,9 @@
+
+gym3 = Gym(890806254, "GYM Fit", "Los Cedros", "315 6478591")
+gym4 = Gym(901698753, "Madness Muscle", "La Florida", "310 6598321")
+gym5 = Gym(800569723, "Training Center", "Milán", "311 9876532")
+
+
+gymList.append(gym3)
+gymList.append(gym4)
+gymList.append(gym5)
