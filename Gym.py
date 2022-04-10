@@ -7,7 +7,7 @@ class Gym:
         self._name:str = name
         self._address:str = address
         self._phone:str = phone
-        self._campus = Campus(976431258, "Iron GYM", "8845632", "Villamaria", True, 13, False, User) # Composicion de Campus
+        #self._campus = Campus(976431258, "Iron GYM", "8845632", "Villamaria", True, 13, False, User) # Composicion de Campus
        #self.__listCampus:List = []
        #self.__employee = Employee(2375, 'Oscar Andres', '317 8613343', 250000, Role.ADMINISTRATOR, Ranking.DOS)    # Composicion de Empleado
        #self.__listEmployee:List = []
@@ -16,7 +16,7 @@ class Gym:
     # Getter and Setter
 
     def __str__(self):
-        return f"Nombre= {self._name},Correo= {self._address},Telefono= {self._phone}"
+        return f"Nit : {self._nit} || Nombre del Gimnasio : {self._name} || Dirección : {self._address} || Telefono : {self._phone}"
 
     def getName(self):
         return self._name
@@ -62,17 +62,12 @@ def quick_sort(gymList, start, end, compare_func):
     quick_sort(gymList, p+1, end, compare_func)
 
 gymList:list = []
-gym1 = Gym("900712196", "European Hardcore", "Chipre", "311 6987561")
-#gym2 = gym(8,'a',1500,'cool',datetime(2023,3,12),True,Any)
-#gym3 = gym(1,'a',800,'cool',datetime(2023,3,12),True,Any)
-#gym4 = gym(2,'a',3000,'cool',datetime(2023,3,12),True,Any)
-#gym5 = gym(4,'a',2100,'cool',datetime(2023,3,12),True,Any)
+gym1 = Gym("900712192", "European Hardcore", "Chipre", "311 6987561")
+gym2 = Gym("900987652", "Muscle Center", "La Sultana", "311 9863572")
+
 gymList.append(gym1)
 gymList.append(gym2)
-gymList.append(gym3)
-gymList.append(gym4)
-gymList.append(gym5)
 
 quick_sort(gymList, 0, len(gymList) - 1, lambda x, y: x.nit < y.nit)
-for gym in gymList:
-    print(gym)
+for Gym in gymList:
+    print(Gym)
