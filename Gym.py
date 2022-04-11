@@ -71,3 +71,5 @@ gymList.append(gym2)
 quick_sort(gymList, 0, len(gymList) - 1, lambda x, y: x.nit < y.nit)
 for Gym in gymList:
     print(Gym)
+
+
